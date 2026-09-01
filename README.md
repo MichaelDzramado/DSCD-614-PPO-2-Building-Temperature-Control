@@ -13,11 +13,6 @@ problem. PPO receives a seven-dimensional continuous observation and
 produces a continuous HVAC action in `[-1, 1]`, while the reward
 balances energy use, electricity cost, thermal discomfort, and severe
 temperature violations.
-
-> **Reproducibility principle:** the report's numerical results and
-> figures should be regenerated from the preserved project evidence
-> rather than manually recreated from reported values.
-
 ------------------------------------------------------------------------
 
 ## 1. Repository Structure

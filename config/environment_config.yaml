@@ -1,0 +1,26 @@
+environment:
+  timestep_hours: 1
+  episode_hours: 24
+
+comfort:
+  setpoint_c: 22.0
+  tolerance_c: 1.0
+
+profiles:
+  master_seed: 2026
+  train_days: 500
+  validation_days: 100
+  test_days: 100
+
+temperature:
+  base_c: 27.0
+  amplitude_c: 4.5
+  noise_std_c: 0.6
+
+occupancy:
+  noise_std: 0.04
+
+electricity_price:
+  base: 0.50
+  peak: 1.00
+  noise_std: 0.04

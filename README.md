@@ -360,6 +360,7 @@ The thermostat is evaluated on the same validation-profile set.
 > audit. They are intentionally retained for traceability. The final
 > report figures use the preserved Phase 10 report-evidence files.
 
+
 ------------------------------------------------------------------------
 
 # 7. Reproducing Every Figure in the Report

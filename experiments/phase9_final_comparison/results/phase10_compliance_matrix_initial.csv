@@ -1,0 +1,26 @@
+Requirement,Project Evidence,Evidence Location,Status
+Implement PPO for the selected control problem,BuildingTemperatureEnv + Stable-Baselines3 PPO; final PPO Seed 123 model preserved,environment/building_env.py; experiments/ppo_pilot/models/,PASS
+Formulate the problem as an MDP,"State, continuous action, transition dynamics, reward and episode structure implemented",environment/building_env.py; environment/reward.py; environment/thermal_model.py,PASS
+Specify state space,7-dimensional normalized observation space,environment/building_env.py,PASS
+Specify action space,"Continuous HVAC action in [-1, 1]",environment/building_env.py,PASS
+Specify reward function,"RewardCalculator combines energy, electricity cost, comfort/discomfort and safety penalties",environment/reward.py,PASS
+Specify episode termination condition,24-hour building-control episode,environment/building_env.py; environment/profiles.py,PASS
+Specify discount factor γ,PPO training configuration includes discount factor,notebooks/03_ppo_training_analysis.ipynb,VERIFY
+Train over multiple episodes,"PPO trained to approximately 20,000 timesteps per seed; 24-hour episodes",experiments/ppo_pilot/models/; notebooks/03_ppo_training_analysis.ipynb,PASS
+Plot training reward against episodes or timesteps,TensorBoard event files discovered; formal final training-reward figure not yet preserved,experiments/ppo_pilot/logs/,NEEDS FIX
+Evaluate on unseen validation episodes,10 held-out validation profiles; 240 transitions,experiments/phase9_final_comparison/data/,PASS
+Compare against a baseline,Rule-based ThermostatController evaluated on the same validation profiles,baseline/thermostat.py; experiments/phase9_final_comparison/,PASS
+Run at least three random seeds,"Seeds 42, 123 and 2024",experiments/ppo_pilot/evaluation/final_ppo/,PASS
+Report average performance,Mean performance calculated across three seeds,ppo_multi_seed_stability_summary.csv,PASS
+Report variation across runs,"Standard deviation, minimum and maximum reported for performance metrics",ppo_multi_seed_stability_summary.csv,PASS
+Discuss convergence,5K vs 20K comparison and training logs available; formal training-reward analysis still required,ppo_pilot_5k.zip; ppo_pilot_20k.zip; experiments/ppo_pilot/logs/,VERIFY
+Discuss training stability,Three-seed stability analysis with mean and standard deviation,ppo_multi_seed_stability_summary.csv,PASS
+Discuss exploration,PPO stochastic policy and entropy coefficient are available in training configuration,notebooks/03_ppo_training_analysis.ipynb,VERIFY
+Discuss reward design,RewardCalculator implementation and reward configuration,environment/reward.py,VERIFY
+Report energy consumption,Total Energy reported for PPO and thermostat,Phase 9 comparative evidence,PASS
+Report electricity cost,Electricity cost reported for both controllers,Phase 9 comparative evidence,PASS
+Report comfort violations,"Comfort deviation, discomfort and comfort-band coverage reported",Phase 9 comparative evidence,PASS
+Report peak electricity demand,Peak HVAC energy currently reported; exact interpretation as electricity demand requires verification,Phase 9 comparative evidence; environment/building_env.py,VERIFY
+Report cumulative reward,Cumulative reward reported for PPO and thermostat,Phase 9 comparative evidence,PASS
+Discuss limitations,Simulation and validation-scope limitations documented,phase9_final_summary.md,PASS
+Discuss real-world deployment challenges,"Measurement uncertainty, actuator constraints, model mismatch and changing operating conditions discussed",phase9_final_summary.md,PASS

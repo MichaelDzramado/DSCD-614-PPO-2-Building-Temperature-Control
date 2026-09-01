@@ -1,0 +1,3 @@
+ID,Official Requirement,Project Evidence,Evidence,Verification,Status
+R10e,Discuss limitations.,"Simulation scope, validation scope and modelling limitations identified for final discussion.",Phase 9 summary / final documentation,Requires explicit final-report section.,VERIFY
+R10f,Discuss possible real-world deployment challenges.,"Real-world considerations include model mismatch, sensor uncertainty, actuator constraints and changing building conditions.",Phase 9/final documentation,Requires explicit final-report discussion.,VERIFY

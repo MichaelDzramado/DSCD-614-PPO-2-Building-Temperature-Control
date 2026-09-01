@@ -1,0 +1,9 @@
+Component,Evidence,Status
+Observation/state space,building_env.py,FOUND
+Action space,building_env.py,FOUND
+Transition dynamics,building_env.py + thermal_model.py,FOUND
+Episode termination,building_env.py,FOUND
+Reward function,reward.py,FOUND
+Exogenous profiles,profiles.py,FOUND
+PPO configuration,03_ppo_training_analysis.ipynb,FOUND
+Discount factor γ,03_ppo_training_analysis.ipynb,FOUND

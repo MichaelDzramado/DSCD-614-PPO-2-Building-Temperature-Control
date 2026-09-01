@@ -1,0 +1,40 @@
+PHASE 9 — FINAL COMPARATIVE EVALUATION
+=======================================
+
+Validation generation seed: 9090
+Validation split: validation
+Validation profiles: 10
+Hours per profile: 24
+Total transitions: 240
+
+Controllers:
+  PPO: Final Seed 123
+  Baseline: ThermostatController
+
+Aggregate results:
+  PPO energy: 38.997790
+  Thermostat energy: 82.000000
+  Energy reduction: 52.4417%
+
+  PPO electricity cost: 30.177459
+  Thermostat electricity cost: 59.135228
+  Cost reduction: 48.9687%
+
+  PPO comfort-band coverage: 99.5833%
+  Thermostat comfort-band coverage: 63.3333%
+  Comfort-band gain: 36.2500 percentage points
+
+  PPO safety violations: 0
+  Thermostat safety violations: 0
+
+Cross-profile consistency:
+  Energy improvement: 10/10
+  Cost improvement: 10/10
+  Temperature-deviation improvement: 10/10
+  Comfort-band improvement: 10/10
+
+Validation profile generation:
+  Function: generate_profiles()
+  Seed: 9090
+  Split: validation
+  Configuration: frozen ProfileConfig

@@ -1,0 +1,10 @@
+Metric,Value
+Energy Reduction (%),52.441719352699266
+Electricity Cost Reduction (%),48.96872810169945
+Comfort-Band Gain (percentage points),36.25
+PPO Total Discomfort,0.0005016531532469
+Thermostat Total Discomfort,49.92712541566722
+PPO Safety Violations,0.0
+Thermostat Safety Violations,0.0
+Validation Profiles,10.0
+Validation Transitions,240.0

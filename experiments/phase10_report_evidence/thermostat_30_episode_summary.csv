@@ -1,0 +1,2 @@
+total_energy,electricity_cost,mean_temperature_deviation,total_discomfort,comfort_band_pct,safety_violations,cumulative_reward,peak_hvac_energy,minimum_temperature,maximum_temperature
+7.9,5.909995970599732,0.8362816507114429,4.917550150460172,65.13888888888889,0.0,-5.519019254304015,1.0,20.468307610294485,24.507937912544715
